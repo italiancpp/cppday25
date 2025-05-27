@@ -1,0 +1,54 @@
+# Use site.<name> to read the stuff from here.
+
+title: C++ Day 2025
+# Stick to ISO 8601 - will be used for time conversion.
+date: 2025-10-25
+place: # Included in intro image. Online
+
+description: > # this means to ignore newlines until "baseurl:"
+  A full-day event about C++ development organized with passion by the Italian C++ Community. In Pavia, free to attend.
+  
+baseurl: "/cppday25" # the subpath of your site, e.g. /blog Remove to serve the site locally.
+url: "ilpropheta.github.io" # the base hostname & protocol for your site
+
+# Allowed values: cfs, reservation, speakers, agenda, map, sponsors.
+sections: ['cfs', 'map', 'sponsors']
+
+general_feedback: "https://forms.gle/1maJLDzTMoSyzcBq6"
+eventbrite_id: "612358138677"
+
+# Build settings
+markdown: kramdown
+
+logo: "https://raw.githubusercontent.com/italiancpp/misc/master/logo/logo_completo.png"
+contact_url: mailto:info@italiancpp.org
+
+#Image in the header
+poster: cppday25.png
+navbar_height: 60
+
+google_site_verification: googleXXXXXXXXXXXXXXXX.html
+
+include: []
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Social networks usernames 
+social:
+  - title: desktop
+    url: https://italiancpp.org
+  - title: facebook
+    url: https://www.facebook.com/italiancpp/
+  - title: twitter
+    url: https://x.com/italiancpp
+  - title: linkedin
+    url: https://www.linkedin.com/company/italiancpp
+  - title: youtube
+    url: https://www.youtube.com/@italiancppcommunity
+    
+
+# Build settings
+markdown: kramdown
+permalink: pretty
