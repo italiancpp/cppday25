@@ -78,11 +78,23 @@ function ConvertToSelectedTimeZone() {
    
         var startTime = ToFullIsoDate(utcTimes[0]);
         var endTime = ToFullIsoDate(utcTimes[1]);
+        var currentTime = new Date().toISOString();
+
+        // Decommonet to force a particular time when testing.
+        // currentTime = '2025-10-25T12:40:41.132Z'
         
         dateAsText.nodeValue = 
             ConvertToTimeZone(startTime, targetTimeZone) +
             " - " +
             ConvertToTimeZone(endTime, targetTimeZone);
+
+        // ISO dates can be sorted lexicographically.
+        var ongoing = startTime < currentTime && currentTime < endTime;
+        if (ongoing) {
+            var row = timeRoot.parentElement;
+            row.classList.add('ongoingEvent');
+        }
+
     } 
        
 }
