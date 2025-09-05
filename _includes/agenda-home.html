@@ -132,13 +132,11 @@ function ConvertToSelectedTimeZone() {
   </optgroup>
 </select></th>
                     <th class="row-2 agenda-activity"><center>Track A (Room N10)</center></th>
-                    <th class="row-2 agenda-activity"><center>Track B (Room N11)</center></th>  
                 </tr>
             </thead>
             
             <!--Careful with white spaces. This section is really sensitive to any space. The resulting code is... questionable.-->
             {% assign track_a = site.data.agenda_track_A %}
-            {% assign track_b = site.data.agenda_track_B %}
             {% assign rows = track_a.size | minus: 1 %}
             {% assign truncation_limit = 200 %}
             {%- for i in (0..rows) -%}
@@ -159,25 +157,6 @@ function ConvertToSelectedTimeZone() {
                           id="{{i}}A_short">{{- abstract | truncate: truncation_limit -}}</p><p class="agenda-toggle abstract"
                           id="{{i}}A_short_toggle"
                           onclick="swapShortVersion('{{i}}A')">(click here to read more)</p>
-                    {%- else -%}
-                        <p class="abstract">{{- abstract -}}</p>
-                    {%- endif -%}
-                    </td>
-                {%- assign abstract = track_b[i].abstract -%}
-                {% assign slides_link = track_b[i].slides %}
-                {% assign video_link = track_b[i].video %}
-                    <td class="content-on-top"><b>{{- track_b[i].item -}}</b><br>{% for person in track_b[i].speaker %}{% assign speaker_id = person | replace: " ", "_"  %}<a href="#speaker_id_{{speaker_id}}" class="speakers-link" data-toggle="modal">{{- person -}}</a><br>{% endfor %}{% if slides_link %}<a href="{{slides_link}}" target="_blank">&#x1F64B; Slides</a>{% endif %}{% if video_link and slides_link %} - {% endif %}{% if video_link %}<a href="{{video_link}}" target="_blank">📽 Video</a>{% endif %}
-                    {%- assign abstract = track_b[i].abstract -%}
-                    {%- if abstract.size > truncation_limit -%}
-                        <p class="abstract" 
-                           id="{{i}}B_long"
-                           style="display:none">{{- abstract -}} </p><p class="agenda-toggle abstract"
-                          id="{{i}}B_long_toggle"
-                          onclick="swapShortVersion('{{i}}B')"
-                          style="display:none">(click here to reduce)</p><p class="abstract"
-                          id="{{i}}B_short">{{- abstract | truncate: truncation_limit -}}</p><p class="agenda-toggle abstract"
-                          id="{{i}}B_short_toggle"
-                          onclick="swapShortVersion('{{i}}B')">(click here to read more)</p>
                     {%- else -%}
                         <p class="abstract">{{- abstract -}}</p>
                     {%- endif -%}
