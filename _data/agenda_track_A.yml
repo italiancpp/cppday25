@@ -19,7 +19,7 @@
   abstract: "Delegating behaviors to other parts of the code is essential for writing reusable, extensible, and flexible software.<br/>C++ provides several mechanisms to achieve this: from virtual functions to function objects, from function pointers to lambdas, as well as templates, concepts, and more.<br/>Each comes with its own strengths, trade-offs, and sweet spots.<br/>In this talk, we will systematically explore the main options the language offers for passing behaviors — comparing their syntax, performance, flexibility, and suitability for different contexts.<br/>The goal is to provide a reasoned roadmap that helps developers consciously choose the most appropriate mechanism based on their specific needs."
 
 - time: 09:30 - 10:00
-  item: "Break"
+  item: "☕ Coffee Break 🥐"
 
 - time: 10:00 - 11:00
   item: "SIMD substring in a string"
@@ -28,7 +28,7 @@
   abstract: "Despite being widely avaliable on modern hardware, vectorization remains a dark art known to only a select few. For the last few years I've been trying to change that by explaining (with pretty pictures) how to do different simd algorithms.<br/>Searching a subsequence in a sequence is next one to tackle (you don't need to watch anything beforehand). <br/>We will start with the \"interview problem\" level solutions and examine how they perform (spoiler: poorly).<br/>Then we look at the standard libary and see how it compares to the interview solutions (spoiler: the standard library should do a better job).<br/>Finally we are going to do some SIMD, using <a href='https://github.com/jfalcou/eve'>EVE</a> library.<br/>We'll do:<ul><li>memcmp</li><li>memchr</li><li>and finally a eve::algo::search, which is a pretty good substring in a string.</li></ul>"
 
 - time: 11:00 - 12:00
-  item: "Lunch"
+  item: "😋 Lunch"
 
 - time: 12:00 - 12:35
   item: "Mocking the UART in C++: A Hands-On Approach"
@@ -43,7 +43,7 @@
   abstract: "Most C++ talks focus on algorithms or data structures that run once and exit. Yet, in real-world software much of our code lives inside interactive programs that converse with human users or remote services. Translating business-level interaction scenarios into efficient, maintainable C++ can be trivial, or fiendishly hard.<br/>This session gives a concise formal map of every major class of interactive program and shows how to realize each in C++ with little or no runtime cost. Starting with the simplest sequential dialog, we climb the hierarchy of complexity. We will discuss tree-structured, graph-structured, push-down, and finally Turing-complete programs, and then layer commonly required features such as state serializability, pre-condition checking, and state inspectability.<br/>For every stop you will receive:<br/><ul><li>A motivating example of the problems found there</li><li>A explanation of which cpp language features are required to implement it</li><li>A “cheat-sheet” pattern (code + design) ready for production</li></ul>Finally, we will see what limitations prevent idiomatic implementations are inherent to CPP language features, and what solutions are available to mend them."
 
 - time: 13:30 - 14:00
-  item: "Break"
+  item: "☕ Coffee Break 🍪"
 
 - time: 14:00 - 14:50
   item: "8 Queens at Compile Time: A Journey from C++03 to Modern C++"
