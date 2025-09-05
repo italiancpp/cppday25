@@ -8,7 +8,7 @@
         </div>
         <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-10 col-lg-offset-1">
               <div class="modal-body">
                 
                 <!-- Talk info -->
@@ -17,19 +17,24 @@
                 <hr class="star-primary">
                 <p>{{ talk.abstract }}</p>
 
-                <!-- Speaker info -->
+                <!-- Speaker section -->
                 {% if talk.speaker %}
+                  <h3 style="margin-top:3rem;">Speaker{% if talk.speaker.size > 1 %}s{% endif %}</h3>
                   {% for sp in talk.speaker %}
                     {% assign spdata = site.data.speakers | where: "name", sp | first %}
                     {% if spdata %}
-                      <div class="speaker-info">
-                        <h3>{{ spdata.name }}</h3>
-                        <p class="text-muted">{{ spdata.job }}</p>
-                        <img src="img/Speaker_{{ spdata.name | replace: " ", "_" }}.{{ spdata.format }}" 
-                             class="img-responsive img-centered speaker-info-portrait" 
-                             alt="{{ spdata.name }}">
-                        <h4>Topic: {{ spdata.topic }}</h4>
-                        <p>{{ spdata.description }}</p>
+                      <div class="row speaker-block" style="margin-top:2rem; margin-bottom:2rem;">
+                        <div class="col-sm-3 col-sm-push-9 text-center">
+                          <img src="img/Speaker_{{ spdata.name | replace: " ", "_" }}.{{ spdata.format }}" 
+                               alt="{{ spdata.name }}" 
+                               class="img-responsive img-circle" 
+                               style="max-width:120px; margin:0 auto 1rem;">
+                          <h4>{{ spdata.name }}</h4>
+                          <p class="text-muted">{{ spdata.job }}</p>
+                        </div>
+                        <div class="col-sm-9 col-sm-pull-3">
+                          <p>{{ spdata.description }}</p>
+                        </div>
                       </div>
                       <hr>
                     {% endif %}
@@ -48,4 +53,3 @@
     </div>
   {% endif %}
 {% endfor %}
-
