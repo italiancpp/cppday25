@@ -10,43 +10,44 @@
   abstract: "From raw buffers to generators, the journey of returning an arbitrary number of elements in C++ reflects the evolution of the language itself. C++98 relied on C-style pre-allocated buffers, though output iterators provided an alternative. C++11 made returning containers efficient with move semantics, and lambdas introduced allocation-free flexibility. Then came C++20 with `span` and ranges, unlocking composability — and now C++23 introduces generators, making it all feel effortless.<br/>Each technique has trade-offs (yes, even buffers have their place!). This talk walks through the strengths, pitfalls, and use cases for each approach — because knowing <strong>all</strong> the tools in your toolbox makes you a better programmer."
   
 - time: 08:40 - 09:30
-  item: "Talk2"
+  item: "Delegating Behaviors in C++: A Practical Tour of the Available Mechanisms"
   speaker: 
-    - Speaker2
-  abstract: Abstract2
+    - Daniele Pallastrelli
+  abstract: "Delegating behaviors to other parts of the code is essential for writing reusable, extensible, and flexible software.<br/>C++ provides several mechanisms to achieve this: from virtual functions to function objects, from function pointers to lambdas, as well as templates, concepts, and more.<br/>Each comes with its own strengths, trade-offs, and sweet spots.<br/>In this talk, we will systematically explore the main options the language offers for passing behaviors — comparing their syntax, performance, flexibility, and suitability for different contexts.<br/>The goal is to provide a reasoned roadmap that helps developers consciously choose the most appropriate mechanism based on their specific needs."
 
 - time: 09:30 - 10:00
   item: "Break"
 
 - time: 10:00 - 11:00
-  item: "Talk3-60"
+  item: "SIMD substring in a string"
   speaker: 
-    - Marco Arena
-  abstract: Abstract3
+    - Denis Yaroshevskiy
+  abstract: "Despite being widely avaliable on modern hardware, vectorization remains a dark art known to only a select few. For the last few years I've been trying to change that by explaining (with pretty pictures) how to do different simd algorithms.<br/>Searching a subsequence in a sequence is next one to tackle (you don't need to watch anything beforehand). <br/>We will start with the \"interview problem\" level solutions and examine how they perform (spoiler: poorly).<br/>Then we look at the standard libary and see how it compares to the interview solutions (spoiler: the standard library should do a better job).<br/>Finally we are going to do some SIMD, using <a href='https://github.com/jfalcou/eve'>EVE</a> library.<br/>We'll do:<ul><li>memcmp</li><li>memchr</li><li>and finally a eve::algo::search, which is a pretty good substring in a string.</li></ul>"
 
 - time: 11:00 - 12:00
   item: "Lunch"
 
 - time: 12:00 - 12:35
-  item: "Talk4-35"
+  item: "Mocking the UART in C++: A Hands-On Approach"
   speaker: 
-    - Speaker4
-  abstract: Abstract4
+    - Stefano Fiorentino
+  abstract: "In the world of software engineering, robust and efficient testing is crucial for ensuring reliable software. But what happens when your code interacts with hardware?<br/>This session provides a step-by-step walkthrough of mocking UART interfaces in C++. Through a practical, demo-driven approach, we’ll explore how to decouple your code from hardware dependencies, simulate UART behavior, and build effective unit tests, even at compile time.<br/>Best of all, we’ll achieve this without relying on any testing frameworks, just plain C++. By the end of this talk, you’ll have a clear understanding of how to integrate mocking techniques into your development workflow, enabling more reliable and maintainable embedded software."
 
 - time: 12:40 - 13:30
-  item: "Talk5"
+  item: "Interactive Program Design in C++: A Taxonomy for Practitioners"
   speaker: 
-    - Speaker5
-  abstract: Abstract5
+    - Massimo Fioravanti
+  abstract: "Most C++ talks focus on algorithms or data structures that run once and exit. Yet, in real-world software much of our code lives inside interactive programs that converse with human users or remote services. Translating business-level interaction scenarios into efficient, maintainable C++ can be trivial, or fiendishly hard.<br/>This session gives a concise formal map of every major class of interactive program and shows how to realize each in C++ with little or no runtime cost. Starting with the simplest sequential dialog, we climb the hierarchy of complexity. We will discuss tree-structured, graph-structured, push-down, and finally Turing-complete programs, and then layer commonly required features such as state serializability, pre-condition checking, and state inspectability.<br/>For every stop you will receive:<br/><ul><li>A motivating example of the problems found there</li><li>A explanation of which cpp language features are required to implement it</li><li>A “cheat-sheet” pattern (code + design) ready for production</li><ul>Finally, we will see what limitations prevent idiomatic implementations are inherent to CPP language features, and what solutions are available to mend them."
 
 - time: 13:30 - 14:00
   item: "Break"
 
 - time: 14:00 - 14:50
-  item: "Talk6"
+  item: "8 Queens at Compile Time: A Journey from C++03 to Modern C++"
   speaker: 
-    - Speaker6
-  abstract: Abstract6
+    - Marco Marcello
+    - Jonathan Marriott    
+  abstract: "The 8 Queens Puzzle — placing eight queens on a chessboard such that no one threatens another — is a classic computer science and combinatorics problem, with exactly 92 valid solutions. While traditionally solved using runtime algorithms, this talk will revisit the puzzle through the lens of compile-time computation, illustrating the evolution of C++ metaprogramming.</br>Years ago, one of the presenters implemented a solution using template metaprogramming techniques available at the time, demonstrating how even complex problems could be solved entirely at compile time. In this talk, we will revisit their original approach and contrast it with modern solutions that utilize variadic templates and constexpr functions to express the same logic more clearly and concisely.<br/>Through this journey, we will highlight not only how compile-time capabilities have grown, but also how modern techniques can drastically improve readability, maintainability, and performance. This talk is for anyone interested in metaprogramming, compile-time computation, or simply in seeing how far C++ has come in enabling elegant solutions to classic problems."
 
 - time: 14:50 - 15:30
   item: "Closing Message"
