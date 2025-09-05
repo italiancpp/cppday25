@@ -24,7 +24,8 @@
                     {% assign spdata = site.data.speakers | where: "name", sp | first %}
                     {% if spdata %}
                       <div class="row speaker-block" style="margin-top:2rem; margin-bottom:2rem;">
-                        <div class="col-sm-3 col-sm-push-9 text-center">
+                        <!-- Left column: portrait + name + job -->
+                        <div class="col-sm-3 text-center">
                           <img src="img/Speaker_{{ spdata.name | replace: " ", "_" }}.{{ spdata.format }}" 
                                alt="{{ spdata.name }}" 
                                class="img-responsive img-circle" 
@@ -32,7 +33,8 @@
                           <h4>{{ spdata.name }}</h4>
                           <p class="text-muted">{{ spdata.job }}</p>
                         </div>
-                        <div class="col-sm-9 col-sm-pull-3">
+                        <!-- Right column: description -->
+                        <div class="col-sm-9">
                           <p>{{ spdata.description }}</p>
                         </div>
                       </div>
