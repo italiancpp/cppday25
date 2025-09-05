@@ -147,7 +147,8 @@ function ConvertToSelectedTimeZone() {
                 
                 <tr>
                     <td class="convertibleTime"><input type="hidden" value="{{ track_a[i].time }}">{{ track_a[i].time }}</td>
-                    <td class="content-on-top">{% assign talk_id = track_a[i].item | replace: " ", "_" | replace: "+", "p" | replace: ":", "_"  %}<a href="#talk_id_{{talk_id}}" class="speakers-link" data-toggle="modal">{{- track_a[i].item -}}</a><br>{% for person in track_a[i].speaker %}{% assign speaker_id = person | replace: " ", "_"  %}<a href="#speaker_id_{{speaker_id}}" class="speakers-link" data-toggle="modal" data-dismiss="modal">{{- person -}}</a><br>{% endfor %}{% if slides_link %}<a href="{{slides_link}}" target="_blank">&#x1F64B; Slides</a>{% endif %}{% if video_link and slides_link %} - {% endif %}{% if video_link %}<a href="{{video_link}}" target="_blank">📽 Video</a>{% endif %}
+                    <td class="content-on-top">{% assign talk_id = track_a[i].item | replace: " ", "_" | replace: "+", "p" | replace: ":", "_"  %}{% if track_a[i].abstract %}<a href="#talk_id_{{talk_id}}" class="speakers-link" data-toggle="modal">{{- track_a[i].item -}}</a>{% else %}<span>{{- track_a[i].item -}}</span>{% endif %}
+                        <br>{% for person in track_a[i].speaker %}{% assign speaker_id = person | replace: " ", "_"  %}<a href="#speaker_id_{{speaker_id}}" class="speakers-link" data-toggle="modal" data-dismiss="modal">{{- person -}}</a><br>{% endfor %}{% if slides_link %}<a href="{{slides_link}}" target="_blank">&#x1F64B; Slides</a>{% endif %}{% if video_link and slides_link %} - {% endif %}{% if video_link %}<a href="{{video_link}}" target="_blank">📽 Video</a>{% endif %}
                     {%- if abstract.size > truncation_limit -%}
                         <p class="abstract" 
                            id="{{i}}A_long"
