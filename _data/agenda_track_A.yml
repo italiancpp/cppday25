@@ -2,6 +2,7 @@
   item: "Welcome Message"
   speaker: 
     - Marco Arena
+    - Sponsors
   
 - time: 07:45 - 08:35
   item: "Zero or More: A Tour Through C++ Techniques for Returning Multiple Values"

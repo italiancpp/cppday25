@@ -138,7 +138,6 @@ function ConvertToSelectedTimeZone() {
             <!--Careful with white spaces. This section is really sensitive to any space. The resulting code is... questionable.-->
             {% assign track_a = site.data.agenda_track_A %}
             {% assign rows = track_a.size | minus: 1 %}
-            {% assign truncation_limit = 200 %}
             
             {%- for i in (0..rows) -%}
                 {% assign slides_link = track_a[i].slides %}
