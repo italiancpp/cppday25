@@ -12,7 +12,7 @@ baseurl: "/cppday25" # the subpath of your site, e.g. /blog Remove to serve the 
 url: "ilpropheta.github.io" # the base hostname & protocol for your site
 
 # Allowed values: cfs, reservation, speakers, agenda, map, sponsors.
-sections: ['reservation', 'agenda', 'map', 'sponsors']
+sections: ['reservation', 'speakers', 'agenda', 'map', 'sponsors']
 
 general_feedback: "https://forms.gle/1maJLDzTMoSyzcBq6"
 eventbrite_id: "1565601820189"
