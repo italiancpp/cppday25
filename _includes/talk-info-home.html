@@ -1,41 +1,51 @@
-<!-- Talks Modals -->
-{% for talk in site.data.agenda_track_A %}
+<!-- Talk + Speaker Modals -->
+{% for talk in site.data.schedule %}
   {% if talk.abstract %}
     <div class="portfolio-modal modal fade" id="talk_id_{{ talk.item | replace: " ", "_" | replace: "+", "p" | replace: ":", "_" }}" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <!-- Talk Title -->
-                            <h2>{{ talk.item }}</h2>
-                            <hr class="star-primary">
-
-                            <!-- Speaker(s), linked to speaker modal -->
-                            {% if talk.speaker %}
-                              <p class="text-muted">
-                                {% for sp in talk.speaker %}
-                                  <a href="#speaker_id_{{ sp | replace: " ", "_" }}" data-toggle="modal">{{ sp }}</a>{% if forloop.last == false %}, {% endif %}
-                                {% endfor %}
-                              </p>
-                            {% endif %}
-
-                            <!-- Abstract -->
-                            <p>{{ talk.abstract }}</p>
-
-                            <button type="button" class="btn btn-default" data-dismiss="modal">
-                              <i class="fa fa-times"></i> Close
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr"><div class="rl"></div></div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                
+                <!-- Talk info -->
+                <h2>{{ talk.item }}</h2>
+                <p class="text-muted">{{ talk.time }}</p>
+                <hr class="star-primary">
+                <p>{{ talk.abstract }}</p>
+
+                <!-- Speaker info -->
+                {% if talk.speaker %}
+                  {% for sp in talk.speaker %}
+                    {% assign spdata = site.data.speakers | where: "name", sp | first %}
+                    {% if spdata %}
+                      <div class="speaker-info">
+                        <h3>{{ spdata.name }}</h3>
+                        <p class="text-muted">{{ spdata.job }}</p>
+                        <img src="img/Speaker_{{ spdata.name | replace: " ", "_" }}.{{ spdata.format }}" 
+                             class="img-responsive img-centered speaker-info-portrait" 
+                             alt="{{ spdata.name }}">
+                        <h4>Topic: {{ spdata.topic }}</h4>
+                        <p>{{ spdata.description }}</p>
+                      </div>
+                      <hr>
+                    {% endif %}
+                  {% endfor %}
+                {% endif %}
+
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  <i class="fa fa-times"></i> Close
+                </button>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   {% endif %}
 {% endfor %}
+
