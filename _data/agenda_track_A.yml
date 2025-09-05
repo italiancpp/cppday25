@@ -8,7 +8,10 @@
   speaker: 
     - Alberto Barbati
   abstract: "From raw buffers to generators, the journey of returning an arbitrary number of elements in C++ reflects the evolution of the language itself. C++98 relied on C-style pre-allocated buffers, though output iterators provided an alternative. C++11 made returning containers efficient with move semantics, and lambdas introduced allocation-free flexibility. Then came C++20 with `span` and ranges, unlocking composability — and now C++23 introduces generators, making it all feel effortless.<br/>Each technique has trade-offs (yes, even buffers have their place!). This talk walks through the strengths, pitfalls, and use cases for each approach — because knowing <strong>all</strong> the tools in your toolbox makes you a better programmer."
-  
+  feedback: https://docs.google.com/forms/d/e/1FAIpQLSdoF4aPG7bArQHR0qw9WvIf1r2ZngzjLD9pHPr56NiPIamPYw/viewform?usp=dialog
+  slides: 
+  video: 
+
 - time: 08:40 - 09:30
   item: "Delegating Behaviors in C++: A Practical Tour of the Available Mechanisms"
   speaker: 

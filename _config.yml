@@ -14,7 +14,7 @@ url: "ilpropheta.github.io" # the base hostname & protocol for your site
 # Allowed values: cfs, reservation, speakers, agenda, map, sponsors.
 sections: ['reservation', 'speakers', 'agenda', 'map', 'sponsors']
 
-general_feedback: "https://forms.gle/1maJLDzTMoSyzcBq6"
+general_feedback: "https://docs.google.com/forms/d/e/1FAIpQLSdwmHerL9k8HreXHGA7xSymsbuGFTXUmQFU5C4mpnFLFqOz8g/viewform?usp=dialog"
 eventbrite_id: "1565601820189"
 
 # Build settings
