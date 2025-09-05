@@ -18,37 +18,37 @@
 - time: 09:30 - 10:00
   item: "Break"
 
-- time: 10:00 - 10:50
-  item: "Talk3"
+- time: 10:00 - 11:00
+  item: "Talk3-60"
   speaker: 
     - Speaker3
   abstract: Abstract3
 
-- time: 10:55 - 11:30
+- time: 11:00 - 12:00
+  item: "Lunch"
+
+- time: 12:00 - 12:35
   item: "Talk4-35"
   speaker: 
     - Speaker4
   abstract: Abstract4
 
-- time: 11:30 - 12:30
-  item: "Lunch"
-
-- time: 12:30 - 13:30
-  item: "Talk5-60"
+- time: 12:40 - 13:30
+  item: "Talk5"
   speaker: 
     - Speaker5
   abstract: Abstract5
 
-- time: 13:40 - 14:30
+- time: 13:30 - 14:00
+  item: "Break"
+
+- time: 14:00 - 14:50
   item: "Talk6"
   speaker: 
     - Speaker6
   abstract: Abstract6
 
-- time: 14:30 - 15:00
-  item: "Break"
-
-- time: 15:00 - 15:30
+- time: 14:50 - 15:30
   item: "Closing Message"
   speaker: 
     - Marco Arena
