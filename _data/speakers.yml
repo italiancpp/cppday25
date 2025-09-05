@@ -4,8 +4,44 @@
   format: png
   description: "Marco is the founder of the <a href='https://italiancpp.org'>Italian C++ Community</a>. He works at Tetra Pak as one of the technical leaders of the AI Engineering Team, pioneering the development of AI-based applications for packaging lines. From 2011 to 2019, he served the Ferrari F1 Racing Team (<i>Scuderia Ferrari</i>) as a Software Engineer and C++ Specialist. Marco is very active in the tech communities environment: he founded the <a href='https://italiancpp.org'>Italian C++ Community</a> in 2013, <a href='https://coding-gym.org'>Coding Gym</a> in 2016, <a href='https://mlmodena.it'>ML Modena</a> in 2020, and he collaborates with <a href='https://conoscerelinux.org'>ConoscereLinux</a>. Since 2016, Marco has received the <a href='https://mvp.microsoft.com/it-it/PublicProfile/5001726'>Microsoft MVP</a> award for his commitment to divulgation."
 
-- name: Speaker1
-  job: Some job title
-  topic: Talk1
+- name: Massimo Fioravanti
+  job: Compiler researcher at Politecnico di Milano
+  topic: Interactive Program Design in C++: A Taxonomy for Practitioners
   format: png
-  description: "Some abstract <strong>strong</strong> with html tags <a href='google.com'>link</a>"
+  description: "Massimo Fioravanti is a C++ programmer who has long suspected that something was fundamentally flawed in how interactive programs are designed. Now a compiler researcher at Politecnico di Milano, he's working to fix that. Massimo is the main maintainer of Rulebook, a collection of utilities aimed at asymptotically reducing the complexity of building interactive systems in mainstream languages like C++ and Python."
+
+- name: Marco Marcello
+  job: Team Lead at Bloomberg
+  topic: 8 Queens at Compile Time: A Journey from C++03 to Modern C++
+  format: png
+  description: "Marco Marcello is a Team Lead in the Real-Time Data Engineering group in Bloomberg’s Frankfurt Office. He has led a team responsible for rule-based processing systems since 2023. His interests include modern C++, concurrency, and the evolution of metaprogramming.<br/>He has held various engineering roles across Bloomberg’s offices in London, Switzerland, and Germany, focusing on order management systems, financial analytics, and high-performance, data-driven applications.He previously worked in the UK on mobile technology at Samsung Electronics, and at ARM Ltd., working on JTAG emulation of ARM test chips.<br/>Born in Cagliari, Sardinia, Marco began programming on the iconic Commodore 64. He earned a master’s degree in electronics engineering from the University of Cagliari in 2001."
+
+- name: Jonathan Marriott
+  job: Software Engineer at Bloomberg
+  topic: 8 Queens at Compile Time: A Journey from C++03 to Modern C++
+  format: png
+  description: "Jonathan Marriott is a Software Engineer at Bloomberg, where he works within the Performance Analytics & Data Engineering group. Jonathan specializes in C++ development, working on a number of high performance systems. He earned a master's degree in mathematics and computer science from the University of Bristol."
+
+- name: Denis Yaroshevskiy
+  job: Performance Engineer
+  topic: SIMD substring in a string
+  format: png
+  description: "Denis works at Meta doing performance for a living.<br/>Denis is a semi-active C++ community member, a few talks, one paper (failed), some C++ standard library patches, some Chrome base library contributions. Denis is one of the maintainers for <a href='https://github.com/jfalcou/eve'>EVE</a> opensource library (SIMD in C++20)."
+
+- name: Alberto Barbati
+  job: Senior R&D Video Game Developer
+  topic: Zero or More: A Tour Through C++ Techniques for Returning Multiple Values
+  format: png
+  description: "Alberto Barbati is a passionate C++ programmer who has been active since the early days of the language and has been following the work of the C++ standards committee since 2008. Since 2001, he has specialized in video game programming, contributing his expertise at Ubisoft Milan, Reply Game Studios, and currently at Nacon Studio Milan. Alberto has also shared his knowledge as a Core Trainer in Game Programming at the Digital Bros Game Academy."
+
+- name: Stefano Fiorentino
+  job: Head of CC IoT & Embedded Systems at adesso Schweiz AG
+  topic: Mocking the UART in C++: A Hands-On Approach
+  format: png
+  description: "Stefano is a professional engineer in Telecommunication Engineering. He started developing software in MATLAB and C for a ray-tracing and earth subsurface tomography, a cluster computing solution. Then he moved working with Qt and C++ for a GUI-based subsurface imaging product. After a really nice period with plain Modern C++ in a financial cluster computing institution, he encountered the Yocto Project and never left it. He is currently Head of the Competence Center Embedded Systems at the consulting firm adesso Schweiz AG. Father of two daughters, high-handicapper golf player, host at C++ User Group Lugano and ISO C++ Committee Member, co-founder of Italian Embedded."
+
+- name: Daniele Pallastrelli
+  job: Senior Software Engineer
+  topic: Delegating Behaviors in C++: A Practical Tour of the Available Mechanisms
+  format: png
+  description: "Daniele Pallastrelli has been programming and designing software for nearly 30 years,ever since he discovered his passion for it as a teenager in the mid-90s.<br/>He is a professional software engineer, speaker, and author — and an enthusiastic runner.<br/>Although usually reluctant to talk about himself in the third person,he can occasionally be persuaded to do so.<br/>In his spare time, Daniele enjoys writing technical papers and blog posts,sharing insights from his long experience with the C++ community."
