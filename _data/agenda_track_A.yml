@@ -64,7 +64,8 @@
     - Jonathan Marriott    
   abstract: "The 8 Queens Puzzle — placing eight queens on a chessboard such that no one threatens another — is a classic computer science and combinatorics problem, with exactly 92 valid solutions. While traditionally solved using runtime algorithms, this talk will revisit the puzzle through the lens of compile-time computation, illustrating the evolution of C++ metaprogramming.</br>Years ago, one of the presenters implemented a solution using template metaprogramming techniques available at the time, demonstrating how even complex problems could be solved entirely at compile time. In this talk, we will revisit their original approach and contrast it with modern solutions that utilize variadic templates and constexpr functions to express the same logic more clearly and concisely.<br/>Through this journey, we will highlight not only how compile-time capabilities have grown, but also how modern techniques can drastically improve readability, maintainability, and performance. This talk is for anyone interested in metaprogramming, compile-time computation, or simply in seeing how far C++ has come in enabling elegant solutions to classic problems."
   feedback: https://docs.google.com/forms/d/e/1FAIpQLScGZZgM0v2qVlvrs_lcBLZrF6OdbQVpE7WeitYY8lKP-f4s6g/viewform?usp=header
-
+  slides: https://github.com/italiancpp/cppday25-slides/blob/main/Marco%20Marcello%20and%20Jonathan%20Marriott%20-%208Queens_Cpp_Day_2025_Final.pdf
+  
 - time: 14:50 - 15:30
   item: "Closing Message"
   speaker: 
