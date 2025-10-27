@@ -43,7 +43,8 @@
     - Stefano Fiorentino
   abstract: "In the world of software engineering, robust and efficient testing is crucial for ensuring reliable software. But what happens when your code interacts with hardware?<br/>This session provides a step-by-step walkthrough of mocking UART interfaces in C++. Through a practical, demo-driven approach, we’ll explore how to decouple your code from hardware dependencies, simulate UART behavior, and build effective unit tests, even at compile time.<br/>Best of all, we’ll achieve this without relying on any testing frameworks, just plain C++. By the end of this talk, you’ll have a clear understanding of how to integrate mocking techniques into your development workflow, enabling more reliable and maintainable embedded software."
   feedback: https://docs.google.com/forms/d/e/1FAIpQLSdwT5vD8_l62DP7yJykX6IUa5TtYO2-D1ck_gGmKeLctKWKDw/viewform?usp=header
-
+  slides: https://github.com/italiancpp/cppday25-slides/blob/main/Stefano%20Fiorentino%20-%20Mocking%20the%20UART%20in%20C%2B%2B%20A%20Hands-On%20Approach.pdf
+  
 - time: 12:40 - 13:30
   item: "Interactive Program Design in C++: A Taxonomy for Practitioners"
   speaker: 
